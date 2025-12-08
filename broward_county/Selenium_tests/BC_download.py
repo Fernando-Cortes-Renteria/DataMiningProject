@@ -1,11 +1,6 @@
 '''
 ================ Descarga de Datos de Broward County ================
 
-Hecho por: Manbo Solutions
-Colaboradores:
-* Manbo Lead
-* Manbo Dev
-
 Usando webscraping con Selenium, descarga de datos de un gran número de residencias en
 Florida
 

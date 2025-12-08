@@ -1,3 +1,6 @@
+// Script de scraping para Tamarac usando Puppeteer y Chrome real
+
+
 const puppeteer = require('puppeteer-core'); // usar puppeteer-core para conectarse a Chrome existente
 const fs = require('fs');
 const readline = require('readline');

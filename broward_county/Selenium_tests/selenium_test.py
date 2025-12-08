@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 
 def data_acquisition():
     web = 'https://www.audible.com/search'
-    path = r'C:\Users\Grati$\Downloads\chromedriver.exe'
+    path = r'C:/Users/Grati$/Downloads/chromedriver.exe'
 
     service = Service(executable_path=path)
     driver = webdriver.Chrome(service=service)
