@@ -8,17 +8,15 @@ const { exec } = require('child_process');
 const path = require('path');
 
 // --- Ruta a Chrome en Windows ---
-const chromePath = `"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"`;
+const chromePath = "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe";
 // --- Carpeta temporal para perfil ---
 const userDataDir = `"${path.join(__dirname, 'chrome-temp-debug')}"`;
 // --- Puerto de remote debugging ---
 const debugPort = 9222;
 
 // Abrir Chrome con Remote Debugging
-exec(`${chromePath} --remote-debugging-port=${debugPort} --user-data-dir=${userDataDir} --new-window`, (err) => {
-  if (err) {
-    console.error('Error al abrir Chrome:', err);
-  }
+exec(`"${chromePath}" --remote-debugging-port=${debugPort} --user-data-dir=${userDataDir} --new-window`, (err) => {
+  if (err) console.error('Error al abrir Chrome:', err);
 });
 
 (async () => {
@@ -71,7 +69,7 @@ exec(`${chromePath} --remote-debugging-port=${debugPort} --user-data-dir=${userD
 
     // --- Seleccionar opción de filas por página ---
     await page.waitForSelector('#DataTables_Table_0_length select');
-    await page.select('#DataTables_Table_0_length select', '25'); // o '50', '100'
+    await page.select('#DataTables_Table_0_length select', '100'); // o '50', '100'
     // esperar a que la tabla se refresque
     await new Promise(resolve => setTimeout(resolve, 1000));
 
