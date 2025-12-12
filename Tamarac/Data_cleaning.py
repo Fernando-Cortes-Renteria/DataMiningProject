@@ -10,3 +10,5 @@ Tamarac.columns = ['ApplicationNumber', 'Address', 'ParcelID', 'Contractor', 'Wo
 print(Tamarac.head())
 
 Tamarac.to_csv('Tamarac_cleaned.csv', index=False)
+
+print(Tamarac['WorkType'].unique())
