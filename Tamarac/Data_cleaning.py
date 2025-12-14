@@ -7,8 +7,8 @@ Tamarac = pd.read_json('resultadosTamarac.json')
 
 Tamarac.columns = ['ApplicationNumber', 'Address', 'ParcelID', 'Contractor', 'WorkType', 'Status']
 
+Tamarac["ParcelID"] = Tamarac["ParcelID"].str.replace("-", "", regex=False)
+
 print(Tamarac.head())
 
 Tamarac.to_csv('Tamarac_cleaned.csv', index=False)
-
-print(Tamarac['WorkType'].unique())
