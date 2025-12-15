@@ -33,7 +33,7 @@ def download_county_incremental(county_code):
 
 def main():
 
-    df = download_county_incremental("23")  # Miami‑Dade
+    df = download_county_incremental("16")  # Broward County
 
     # Prefer PARCEL_ID, fallback to PARCEL_ID_
     if "PARCEL_ID" not in df.columns:
@@ -76,7 +76,7 @@ def main():
     ]
 
     # Save CSV
-    out_name = "miamidade_parcels.csv"
+    out_name = "broward_parcels.csv"
     df_final.to_csv(out_name, index=False)
     print(f"\nSaved: {out_name}")
     print(f"Total rows: {len(df_final)}")

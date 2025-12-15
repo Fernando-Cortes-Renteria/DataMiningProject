@@ -5,10 +5,14 @@ pd.set_option('display.width', 200)          # Wider output
 
 Tamarac = pd.read_json('resultadosTamarac.json')
 
-Tamarac.columns = ['ApplicationNumber', 'Address', 'ParcelID', 'Contractor', 'WorkType', 'Status']
+Tamarac_cleaned = Tamarac.rename(columns={
+    'parcel_id': 'ParcelID',
+    'general_contractor': 'Contractor',
+    'tenant_name': 'WorkType',
+    'application_status': 'Status',
+    'application_date': 'Applied Date'
+})[['ParcelID', 'WorkType', 'Contractor', 'Status', 'Applied Date']]
 
-Tamarac["ParcelID"] = Tamarac["ParcelID"].str.replace("-", "", regex=False)
+print(Tamarac_cleaned)
 
-print(Tamarac.head())
-
-Tamarac.to_csv('Tamarac_cleaned.csv', index=False)
+Tamarac_cleaned.to_csv('Tamarac_cleaned.csv', index=False)
