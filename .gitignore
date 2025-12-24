@@ -1,9 +1,0 @@
-.idea/
-.venv/
-node_modules/
-chrome-temp-debug/
-.package-lock.json
-.Tamarac/chrome_temp_debug
-.package.json
-.gitignore
-.idea/workspace.xml
