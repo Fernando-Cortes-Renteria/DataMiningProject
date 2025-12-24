@@ -15,4 +15,4 @@ Tamarac_cleaned = Tamarac.rename(columns={
 
 print(Tamarac_cleaned)
 
-Tamarac_cleaned.to_csv('Tamarac_cleaned.csv', index=False)
+Tamarac_cleaned.to_csv('permits_tamarac.csv', index=False)
