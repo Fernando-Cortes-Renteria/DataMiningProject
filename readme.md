@@ -41,9 +41,13 @@ In general, the ArcGis API keeps a very consistent data structure, nonetheless, 
 ## Repository Structure:
 
 ├── parcels/                # Unprocessed parcels data as well as its extraction code
+
 ├── permits/                # Unprocessed permits data
+
 ├── puppeteer_scraping/     # The node js code for the data extraction of Tamarac county
+
 ├── hurricanes_fl.csv       # Data regarding significant hurricanes for the state of Florida
+
 ├── main.ipynb              # Processing and Results
 
 ## Author:
