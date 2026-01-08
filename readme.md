@@ -9,10 +9,15 @@ analysis for prediction.
 
 ## Datasets:
 Florida Statewide Parcels Database -> https://www.floridagio.gov/datasets/FGIO::florida-statewide-parcels/about
+
 City of Tamarac Building Permits & Inspections Portal -> https://e-gov.tamarac.org/Click2GovBP/selectpermit.html
+
 Pompano Beach Building Department -> https://c2g.pompanobeachfl.gov/Click2GovBP/selectpermit.html
+
 City of Hallandale Beach Self Service Portal -> https://hallandalefl-energovpub.tylerhost.net/apps/SelfService#/search?m=1&fm=1&ps=100&pn=1&em=false&st=roofing
+
 City of Pembroke Pines Development Portal -> https://pembrokepinesfl-energovweb.tylerhost.net/apps/selfservice#/search?m=2&ps=10&pn=1&em=false&st=roof
+
 Wikipedia Hurricanes Dataset -> https://en.wikipedia.org/wiki/List_of_Florida_hurricanes
 
 ## Methodology:
@@ -53,9 +58,11 @@ In general, the ArcGis API keeps a very consistent data structure, nonetheless, 
 ## Author:
 
 Fernando Cortés Rentería
+
 Data Analytics and Business Intelligence
 
 B.A in Finance
+
 Student of Software Engineering
 
 [Github](https://github.com/Fernando-Cortes-Renteria) [LinkedIn](https://www.linkedin.com/in/fernando-cortes-renteria/)
